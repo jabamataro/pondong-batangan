@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => 'Pondong Batangan',
+    'name' => 'People of Pondong Batangan',
 
     /*
     |--------------------------------------------------------------------------
