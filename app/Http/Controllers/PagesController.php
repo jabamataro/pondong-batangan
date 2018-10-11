@@ -11,4 +11,9 @@ class PagesController extends Controller
         $title = 'Pondong Batangan';
         return view('pages.index')->with('title', $title);
     }
+
+    public function about () {
+        $title = 'Pondong Batangan';
+        return view('pages.about')->with('title', $title);
+    }
 }

@@ -147,7 +147,7 @@
                 </div>
             </div>
         </div>
-    </section>
+</section>
 <hr>
 <footer>
     <div class="container">
