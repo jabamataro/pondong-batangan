@@ -8,12 +8,20 @@ class PagesController extends Controller
 {
     //
     public function index () {
-        $title = 'Pondong Batangan';
-        return view('pages.index')->with('title', $title);
+        // $data = array(
+        //     'headerTitle' => 'People of Pondong Batangan',
+        // );
+        $headerTitle = 'People of Pondong Batangan';
+        return view('pages.index')->with('headerTitle', $headerTitle);
     }
 
     public function about () {
-        $title = 'Pondong Batangan';
-        return view('pages.about')->with('title', $title);
+        $headerTitle = 'About';
+        return view('pages.about')->with('headerTitle', $headerTitle);
+    }
+
+    public function history () {
+        $headerTitle = 'History';
+        return view('pages.history')->with('headerTitle', $headerTitle);
     }
 }

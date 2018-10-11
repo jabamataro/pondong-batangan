@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h1>People of Pondong Batangan</h1>
+                    <h1>{{ $headerTitle }}</h1>
                 </div>
             </div>
         </div>
@@ -149,10 +149,6 @@
         </div>
 </section>
 <hr>
-<footer>
-    <div class="container">
-        <p class="copyright text-muted">Copyright &copy; People of Pondong Batangan 2018</p>
-    </div>
-</footer>
+
 
 @endsection

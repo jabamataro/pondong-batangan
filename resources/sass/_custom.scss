@@ -436,8 +436,17 @@ footer {
 }
 
 footer .list-inline {
+    
     margin: 0;
     padding: 0
+}
+
+footer ul li a {
+    color: #EF8354;
+}
+
+footer ul li a:hover {
+    color:black;
 }
 
 footer .copyright {
