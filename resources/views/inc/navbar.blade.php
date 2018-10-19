@@ -14,8 +14,14 @@
                 <li class="nav-item">
                     <a class="nav-link {{{ (Request::is('history') ? 'active' : '') }}}" href="/history">History</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link {{{ (Request::is('teaching') ? 'active' : '') }}}" href="/teaching">Teaching</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle {{{ (Request::is('teachings/*') ? 'active' : '') }}}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Teachings
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/teachings/richman-poorman">{{ $headTitle }}</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{{ (Request::is('programs') ? 'active' : '') }}}" href="/programs">Programs</a>

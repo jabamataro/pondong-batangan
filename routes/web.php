@@ -14,4 +14,4 @@
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/history', 'PagesController@history');
-Route::get('/teaching', 'PagesController@teaching');
+Route::get('/teachings/richman-poorman', 'PagesController@richManPoorMan');

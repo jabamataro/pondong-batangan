@@ -32,11 +32,11 @@ class PagesController extends Controller
         return view('pages.history')->with($data);
     }
 
-    public function teaching () {
+    public function richManPoorMan () {
         $data = array(
-            'headerTitle' => 'Teachings',
-            'siteTitle' => 'Teachings - People of Pondong Batangan'
+            'headerTitle' => 'Rich Man - Poor Man Tension in Society',
+            'siteTitle' => 'Rich Man - Poor Man Tension in Society - People of Pondong Batangan'
         );
-        return view('pages.teaching')->with($data);
+        return view('pages.teachings.richManPoorMan')->with($data);
     }
 }
