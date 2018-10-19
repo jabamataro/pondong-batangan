@@ -14,7 +14,7 @@
     </div>
 </header>
 
-<section class="content-section" style="background-color: #E1E6E1;">
+<section class="content-section divider-content">
     <div class="container text-center">
         <div class="row">
             <div class="col-lg-10 mx-auto">
@@ -76,7 +76,7 @@
 </div>
 
 
-<section class="content-section" style="background-color: #F3F8F2;">
+<section class="content-section divider-content">
     <div class="container text-center">
         <div class="row">
             <div class="col-lg-10 mx-auto">
@@ -143,7 +143,7 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <img src="img/logo.png" class="img-responsive" style="max-width: 155px;">
+                    <img src="img/logo-pb.png" class="img-fluid mx-auto d-block">
                 </div>
             </div>
         </div>

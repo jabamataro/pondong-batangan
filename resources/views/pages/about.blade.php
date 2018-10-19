@@ -65,28 +65,6 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
-                <h2 class="section-heading text-center">Pananaw</h2>
-                <p class="subheading text-center">Archdiocese of Lipa</p>
-                <p class="text-center">
-                    <i>Isang bayang tinawag ng Ama<br>
-                        kay Jesukristo<br>
-                        upang maging mga sambayanan<br>
-                        ng mga taong may kaganapan ng buhay<br>
-                        sa sanlibutan,<br>
-                        sumasaksi sa Paghahari ng Diyos<br>
-                        sa pagsasabuhay ng Misterio Paskwal<br>
-                        sa kapangyarihan ng Espiritu Santo.</i></p>
-                </p>
-                <hr>
-            </div>
-        </div>
-    </div>
-</article>
-
-<article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
                 <h2 class="section-heading">An Integral Evangelization Program</h2>
                 <p><b>Pondong Batangan</b> proclaims GOOD NEWS of Fullness of life or kaganapan ng Buhay. As
                     spelled out in the vision or Pananaw, Aral ng Batangueno takes this to mean freedom from all
