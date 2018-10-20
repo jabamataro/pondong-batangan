@@ -19,8 +19,13 @@
                         Teachings
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/teachings/richman-poorman">{{ $headTitle }}</a>
-                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="/teachings/richman-poorman">Rich Man - Poor Man Tension in Society</a>
+                        <a class="dropdown-item" href="/teachings/meager-desire">The Meager Desire of the Poor</a>
+                        <a class="dropdown-item" href="/teachings/never-despise-the-least">Never Despise the Least</a>
+                        <a class="dropdown-item" href="/teachings/funds-from-small-contributions">Funds from Small Contributions</a>
+                        <a class="dropdown-item" href="/teachings/sacrament-of-the-small">The Sacrament of the Small</a>
+                        <a class="dropdown-item" href="/teachings/christian-charity-of-the-batangueno">Christian Charity of the Batangueño</a>
+                        <a class="dropdown-item" href="/teachings/a-way-to-love-a-way-of-life">a Way to Love, a Way of Life</a>
                     </div>
                 </li>
                 <li class="nav-item">

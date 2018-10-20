@@ -16,92 +16,63 @@
 </header>
 
 <article>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <h2 class="section-heading text-center">Pananaw</h2>
-                    <p class="subheading text-center">Archdiocese of Lipa</p>
-                    <p class="text-center">
-                        <i>Isang bayang tinawag ng Ama<br>
-                        kay Jesukristo<br>
-                        upang maging mga sambayanan<br>
-                        ng mga taong may kaganapan ng buhay<br>
-                        sa sanlibutan,<br>
-                        sumasaksi sa Paghahari ng Diyos<br>
-                        sa pagsasabuhay ng Misterio Paskwal<br>
-                        sa kapangyarihan ng Espiritu Santo.</i></p>
-                    </p>
-                    <hr>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p>More than seventy percent (70%) of any Batangueño community is
+                made up of the poorer segment of society. The inequality shows not
+                only in the houses they live in and in the food they eat, but also in the
+                comforts of living they enjoy and the education their children get.</p>
             </div>
         </div>
-    </article>
-    
-    <article>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <img src="img/logo-pb.png" class="img-fluid mx-auto d-block">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <h2 class="section-heading">The Birth of Pondong Batangan</h2>
-                    <p>Year 2000 was the Great Jubilee Year in the whole Catholic Church as declared
-                    by Pope John Paul II. The preparation for this celebration began with the
-                    publication of the Apostolic Letter “Tertio Millenio Adveniente” (As the Third
-                    Millennium Approaches) on November 10, 1994 and its convocation was made
-                    through the Papal Bull “Incarnationis Mysterium” (The Mystery of the
-                    Incarnation) issued on November 29, 1998. In the Archdiocese of Lipa, aside
-                    from the prescribed ways of celebrating the Jubilee, LAGPAS III (Lipa
-                    Archdiocesan General Pastoral Assembly) was held on April 26 - 28, 2000 under
-                    the animation of the then Archbishop Gaudencio B. Rosales. It was in this
-                    assembly of priests and lay delegates from parishes and church organizations
-                    in the Archdiocese that Pondong Batangan was launched.</p>
-                    <hr>
-                    <a href="#">
-                        <img class="img-fluid" src="img/3.jpg">
-                    </a>
-                    <hr>
-                </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p>The poor around us live in lightly built houses, eat less rich food and
+                    engage only in simple recreation. Next to the little leisure available to
+                    them is the chance of playing small games of gambling. They engage
+                    in these, either to while away their time or to nurture the faint hope of
+                    getting lucky and winning an amount of money which their poor life
+                    cannot provide them.</p>
             </div>
         </div>
-    </article>
-    
-    <article>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <h2 class="section-heading">An Integral Evangelization Program and a Community Foundation</h2>
-                    <p><b>Pondong Batangan</b> was registered with the Securities and Exchange Commission on December 8, 1999 under the
-                        official name of Pondong Batangan Community Foundation, Inc. (PBCFI). It was conceived as a program of integral
-                        evangelization but it also bore the features of a community foundation. While it proclaimed the “Good News of the
-                        Fullness of Life” and invited the practice of Christian Charity by way of small giving among the Batangueños, it was also
-                        able to build up funds for people and community development.</p>
-    
-                    <p>Today, the Batangueños continue to actively support Pondong Batangan offering 25 centavos in indigenous coin banks
-                        called the “PB TIBYO”. These are kept in their homes and once filled with coins or loose change, they are offered during
-                        mass. Truly, Pondong Batangan “operationalizes” the love of Christ through a simple practice which also developed the
-                        “Spirituality of the Crumbs”, an offshoot on the reflection on the Parable of the Rich Man and the Beggar (Luke 16: 19-
-                        31).</p>
-    
-                    <p>As a community foundation, Pondong Batangan gives out grants and financial assistance for various programs and
-                        projects that will help uplift the lives of individuals, families, and communities in the Province of Batangas. The first
-                        program implemented by the various parishes was the micro or social credit program (Alalay sa Kabuhayan ng Pondong
-                        Batangan) and this spun off to other livelihood projects. A scholarship program (Dunong Batangan Scholarship Program)
-                        then helped poor but deserving students get a college education from partner schools, as well as a vocational training
-                        program (Galing Batangueno Vocational Training Program) which offered various courses in partnership with different
-                        individual trainors and training institutions which imparted employable skills to out-of-school youth and out-of-job
-                        young adults. Social Enterprise (Sipag Batangueno) also got funding support. From its “small” beginnings, Pondong
-                        Batangan continued to reach out and extend a helping hand to poor and needy Batangueños.</p>
-                    <hr>
-                    <a href="#">
-                        <img class="img-fluid" src="img/4.jpg">
-                    </a>
-                    <hr>
-                </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p>Alas, the poor never win in gambling games. Hardly can they win in
+                    any competition, for life’s chances are always ‘loaded or stacked’
+                    against them. They practically have very little chance to succeed in
+                    politics, in business, and in gambling, too.</p>
             </div>
         </div>
-    </article>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p>The quality of being differs among people depending on how well
+                    provided or how much deprived they are in life. Indeed, how
+                    unfortunate are the poor, that as they are dispossessed, they are also
+                    oppressed. The late Pope Paul VI once said: “The scandal of glaring
+                    inequalities in people’s lives is not merely in the enjoyment of
+                    possessions but even more in the exercise of power.” (PP, 9)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p>The Gospel describes the grave social inequalities of today in the
+                    parable of the rich man, Dives, and the beggar, Lazarus. “There was a
+                    rich man who used to dress in purple and fine linen and feast
+                    magnificently every day. And at his gate, there used to lie a poor man
+                    called Lazarus, covered with sores, who longed to fill himself with
+                    what fell from the rich man’s table.” (Luke 16:19-22)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p>The social inequality – so unchristian and oftentimes inhuman, too –
+                    calls the attention to the Christian Batangueño. He knows that poverty
+                    s not the lot and destiny of the human person. We are called to a
+                    fullness of life! And fullness of life is what Jesus brought us – “I have
+                    come so that they may have life and have it to the full.” (John 10:10)</p>
+            </div>
+        </div>
+    </div>
+</article>
 
 @endsection
