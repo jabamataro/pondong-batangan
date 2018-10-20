@@ -32,6 +32,22 @@ class PagesController extends Controller
         return view('pages.history')->with($data);
     }
 
+    public function programs () {
+        $data = array(
+            'headerTitle' => 'Programs',
+            'siteTitle' => 'Programs - People of Pondong Batangan'
+        );
+        return view('pages.programs')->with($data);
+    }
+
+    public function news () {
+        $data = array(
+            'headerTitle' => 'News',
+            'siteTitle' => 'News - People of Pondong Batangan'
+        );
+        return view('pages.news')->with($data);
+    }
+
     //teachings
 
     public function richManPoorMan () {

@@ -123,7 +123,7 @@
                         to instruct its spirits and practice. But they should also inspire Batanguenos in caring for
                         the poor and the needy. </p>
                 </blockquote>
-                <a href="/teachings"><button type="button" class="btn btn-primary">Learn More</button></a>
+                <a href="/teachings/richman-poorman"><button type="button" class="btn btn-primary">Learn More</button></a>
             </div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                 <h2>Programs</h2>
