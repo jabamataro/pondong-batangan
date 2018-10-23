@@ -15,9 +15,8 @@ Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/history', 'PagesController@history');
 Route::get('/programs', 'PagesController@programs');
-Route::get('/news', 'PagesController@news');
 
-//teachings
+// Teachings
 Route::get('/teachings/richman-poorman', 'PagesController@richManPoorMan');
 Route::get('/teachings/meager-desire', 'PagesController@meagerDesire');
 Route::get('/teachings/never-despise-the-least', 'PagesController@neverDespise');
@@ -25,3 +24,5 @@ Route::get('/teachings/funds-from-small-contributions', 'PagesController@smallCo
 Route::get('/teachings/sacrament-of-the-small', 'PagesController@sacrament');
 Route::get('/teachings/christian-charity-of-the-batangueno', 'PagesController@christianCharity');
 Route::get('/teachings/a-way-to-love-a-way-of-life', 'PagesController@loveLife');
+
+Route::resource('news', 'NewsController');

@@ -342,7 +342,7 @@ q {
 .post-preview>a:focus,
 .post-preview>a:hover {
     text-decoration: none;
-    color: #0085a1
+    color: #EF8354;
 }
 
 .post-preview>a>.post-title {
@@ -512,4 +512,48 @@ footer .copyright {
     background: #7386D5;
     color: #fff;
     transition: all 0.3s;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.breadcrumb>.breadcrumb-item {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
+
+.alert {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
+
+.page-link {
+    color: #EF8354;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
+
+.page-item.active .page-link {
+    background-color: #EF8354;
+    border-color: #EF8354;
+    color: #fff;
+}
+
+.page-link:hover {
+    color: #000;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }

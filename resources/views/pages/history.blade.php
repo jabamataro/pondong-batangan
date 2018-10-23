@@ -2,7 +2,7 @@
 
 @section('content')
 
-<header class="masthead" style="background-image: url('img/aboutHeader.jpg')">
+<header class="masthead" style="background-image: url('img/historyHeader.jpg')">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -105,9 +105,7 @@
                     young adults. Social Enterprise (Sipag Batangueno) also got funding support. From its “small” beginnings, Pondong
                     Batangan continued to reach out and extend a helping hand to poor and needy Batangueños.</p>
                 <hr>
-                <a href="#">
-                    <img class="img-fluid" src="img/4.jpg">
-                </a>
+                <img class="img-fluid" src="img/4.jpg">
                 <hr>
             </div>
         </div>

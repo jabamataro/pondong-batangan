@@ -110,15 +110,16 @@
     </div>
 </article>
 
-{{-- <article>
+<article>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h2 class="section-heading">Organizational Chart</h2>
-
+                <img class="img-fluid" src="img/oc.png">
             </div>
         </div>
+        <hr>
     </div>
-</article> --}}
+</article>
 
 @endsection

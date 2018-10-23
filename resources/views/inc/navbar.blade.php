@@ -32,7 +32,7 @@
                     <a class="nav-link {{{ (Request::is('programs') ? 'active' : '') }}}" href="/programs">Programs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{{ (Request::is('news') ? 'active' : '') }}}" href="/news">News</a>
+                    <a class="nav-link {{{ (Request::is('news') ? 'active' : '') }}}" href="/news">Ulat Batangan</a>
                 </li>
             </ul>
         </div>

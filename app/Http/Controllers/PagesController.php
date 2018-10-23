@@ -40,15 +40,7 @@ class PagesController extends Controller
         return view('pages.programs')->with($data);
     }
 
-    public function news () {
-        $data = array(
-            'headerTitle' => 'News',
-            'siteTitle' => 'News - People of Pondong Batangan'
-        );
-        return view('pages.news')->with($data);
-    }
-
-    //teachings
+    // Teachings
 
     public function richManPoorMan () {
         $data = array(
