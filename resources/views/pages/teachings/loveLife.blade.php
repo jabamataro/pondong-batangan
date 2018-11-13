@@ -16,7 +16,7 @@
 </header>
 
 <article>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <p>Through Pondong Batangan, the Batangueño becomes the little

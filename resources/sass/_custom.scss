@@ -105,13 +105,13 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
     font-weight: 800;
-    color: #EF8354;
+    color: #8BB99E;
     letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-    color: #EF8354
+    color: #8BB99E;
 }
 
 #mainNav .navbar-toggler {
@@ -138,11 +138,11 @@ img::-moz-selection {
 
 .dropdown-item:hover {
     color: #000!important;
-    background-color: #EF8354
+    background-color: #8BB99E
 }
 
 #mainNav .navbar-nav>li>a.active {
-    color: #EF8354!important;
+    color: #8BB99E!important;
     background-color: transparent
 }
 
@@ -157,7 +157,7 @@ img::-moz-selection {
 
 #mainNav .navbar-nav>li>a:focus:hover,
 #mainNav .navbar-nav>li>a:hover {
-    color: #EF8354
+    color: #8BB99E
 }
 
 @media (min-width:992px) {
@@ -166,11 +166,11 @@ img::-moz-selection {
         background-color: transparent
     }
     #mainNav .navbar-brand {
-        color: fade(white, 70%)
+        color: fade(white, 70%);
     }
     #mainNav .navbar-brand:focus,
     #mainNav .navbar-brand:hover {
-        color: #fff
+        color: #8BB99E
     }
     #mainNav .navbar-nav>li>a,
     #mainNav .navbar-nav>li>a:focus {
@@ -178,7 +178,7 @@ img::-moz-selection {
     }
     #mainNav .navbar-nav>li>a:focus:hover,
     #mainNav .navbar-nav>li>a:hover {
-        color: #EF8354
+        color: #8BB99E
     }
     #mainNav.navbar-shrink {
         border-color: rgba(34, 34, 34, .1);
@@ -189,7 +189,7 @@ img::-moz-selection {
     }
     #mainNav.navbar-shrink .navbar-brand:focus,
     #mainNav.navbar-shrink .navbar-brand:hover {
-        color: #EF8354
+        color: #8BB99E
     }
     #mainNav.navbar-shrink .navbar-nav>li>a,
     #mainNav.navbar-shrink .navbar-nav>li>a:focus {
@@ -197,7 +197,7 @@ img::-moz-selection {
     }
     #mainNav.navbar-shrink .navbar-nav>li>a:focus:hover,
     #mainNav.navbar-shrink .navbar-nav>li>a:hover {
-        color: #EF8354
+        color: #8BB99E
     }
 }
 
@@ -342,7 +342,7 @@ q {
 .post-preview>a:focus,
 .post-preview>a:hover {
     text-decoration: none;
-    color: #EF8354;
+    color: #43845E;
 }
 
 .post-preview>a>.post-title {
@@ -452,7 +452,7 @@ footer .list-inline {
 }
 
 footer ul li a {
-    color: #EF8354;
+    color: #8BB99E;
 }
 
 footer ul li a:hover {
@@ -476,8 +476,8 @@ footer .copyright {
 }
 
 .btn-primary {
-    background-color: #EF8354;
-    border-color: #EF8354
+    background-color: #8BB99E;
+    border-color: #8BB99E;
 }
 
 .btn-primary:active,
@@ -535,7 +535,7 @@ footer .copyright {
 }
 
 .page-link {
-    color: #EF8354;
+    color: #8BB99E;
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 1px;
@@ -544,8 +544,8 @@ footer .copyright {
 }
 
 .page-item.active .page-link {
-    background-color: #EF8354;
-    border-color: #EF8354;
+    background-color: #8BB99E;
+    border-color: #8BB99E;
     color: #fff;
 }
 
@@ -555,5 +555,13 @@ footer .copyright {
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.card-title {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.card-text {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

@@ -48,7 +48,7 @@
 </article>
 
 <article>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <img src="img/logo-pb.png" class="img-fluid mx-auto d-block">
@@ -79,7 +79,7 @@
 </article>
 
 <article>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h2 class="section-heading">An Integral Evangelization Program and a Community Foundation</h2>

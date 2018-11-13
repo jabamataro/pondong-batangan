@@ -7,7 +7,9 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h1>{{ $headerTitle }}</h1>
+                    {{-- <h1>{{ $headerTitle }}</h1> --}}
+                    <img src="img/logo.png" class="img-fluid mx-auto d-block" style="max-width: 200px;">
+                    <span class="subheading">People of Pondong Batangan</span>
                 </div>
             </div>
         </div>
@@ -26,55 +28,7 @@
     </div>
 </section>
 
-<div class="content-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <h2>Ulat Batangan</h2>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Ang Pag-uusig sa Simbahan, ang Paghihirap ng mga Dukha at ang
-                            Pagliligtas ng Diyos
-                        </h2>
-                    </a>
-                    <p class="post-meta">Posted by
-                        <a href="#">Admin</a>
-                        on July 2018</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Ang karukhaan ay nag-aalis ng karangalan ng tao at ang karukhaang ito
-                            ay maaaring magdiin pa rin sa kanya sa kasamaan.
-                        </h2>
-                    </a>
-                    <p class="post-meta">Posted by
-                        <a href="#">Admin</a>
-                        on July 2018</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Ang Pondong Batangan ay ang pagsasabuhay ng pag-ibig ni Kristo
-                        </h2>
-                    </a>
-                    <p class="post-meta">Posted by
-                        <a href="#">Admin</a>
-                        on July 2018</p>
-                </div>
-                <hr>
-                <!-- Pager -->
-                <div class="clearfix">
-                    <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+{{-- @include('news.included_file')
 
 <section class="content-section divider-content">
     <div class="container text-center">
@@ -84,7 +38,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 <section class="showcase">
     <div class="container-fluid p-0">
@@ -143,7 +97,7 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <img src="img/logo-pb.png" class="img-fluid mx-auto d-block">
+                    <img src="img/logo.png" class="img-fluid mx-auto d-block">
                 </div>
             </div>
         </div>

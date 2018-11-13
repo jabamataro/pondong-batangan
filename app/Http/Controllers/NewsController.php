@@ -19,7 +19,9 @@ class NewsController extends Controller
             'siteTitle' => 'Ulat Batangan - People of Pondong Batangan',
             'news' => News::orderBy('created_at', 'desc')->paginate(5)
         );
+        $newsOnly = News::orderBy('created_at', 'desc')->paginate(5);
         return view('news.index')->with($data);
+        return view('news.included_file')->with($newsOnly);
     }
 
     /**

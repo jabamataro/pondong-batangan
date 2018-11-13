@@ -16,7 +16,7 @@
 </header>
 
 <article>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h2 class="section-heading text-center">Vision - Mission Statement - Goals</h2>
@@ -62,7 +62,7 @@
 </article>
 
 <article>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h2 class="section-heading">An Integral Evangelization Program</h2>
@@ -111,11 +111,65 @@
 </article>
 
 <article>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h2 class="section-heading">Organizational Chart</h2>
-                <img class="img-fluid" src="img/oc.png">
+                {{-- <img class="img-fluid" src="img/oc.png"> --}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="card-group">
+                    <div class="card">
+                        <img class="card-img-top" src="img/default.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Most Rev. Gilbert Garcera, D. D.</h5>
+                            <p class="card-text">Chairman</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/default.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Rev. Fr. Eriberto Cabrera (Vic. 6)</h5>
+                            <p class="card-text">Vice Chairman</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/default.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Bernardia Maralit (Vic. 5)</h5>
+                            <p class="card-text">Treasurer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="card-group">
+                    <div class="card">
+                        <img class="card-img-top" src="img/default.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Rev Fr. Manuel Guazon</h5>
+                            <p class="card-text">Executive Director</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/default.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Ma. Lourdes Dumaguin</h5>
+                            <p class="card-text">Accountant Bookkeeper</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/default.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Alberto Dumaguin</h5>
+                            <p class="card-text">Company Driver</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
