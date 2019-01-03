@@ -26,3 +26,4 @@ Route::get('/teachings/christian-charity-of-the-batangueno', 'PagesController@ch
 Route::get('/teachings/a-way-to-love-a-way-of-life', 'PagesController@loveLife');
 
 Route::resource('news', 'NewsController');
+Route::resource('donations', 'DonationsController');
