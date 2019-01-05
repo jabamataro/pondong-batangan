@@ -4,6 +4,7 @@ namespace PondongBatangan\Http\Controllers;
 
 use Illuminate\Http\Request;
 use PondongBatangan\Donation;
+use Illuminate\Support\Facades\Input;
 
 class DonationsController extends Controller
 {
@@ -45,17 +46,18 @@ class DonationsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'donated_by' => 'required',
-            'amount' => 'required',
-            'message' => 'required'
+            'name' => 'required',
+            'address' => 'required',
+            'amount' => 'required'
         ]);
 
         // Submit News
 
         $donations = new Donation;
-        $donations->donated_by = $request->input('donated_by');
+        $donations->name = $request->input('name');
+        $donations->address = $request->input('address');
         $donations->amount = $request->input('amount');
-        $donations->message = $request->input('message');
+        $donations->cash = Input::get('type');
         $donations->save();
 
         return redirect('/donations')->with('success', 'Donation Added!');
@@ -72,7 +74,8 @@ class DonationsController extends Controller
         $data = array(
             'headerTitle' => 'Donations',
             'siteTitle' => 'Donations - People of Pondong Batangan',
-            'donations' => Donation::find($id)
+            'donations' => Donation::find($id),
+            'type' => Donation::where('cash', '1')->get(['cash'])
         );
 
         return view('donations.show')->with($data);
@@ -105,17 +108,18 @@ class DonationsController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-            'donated_by' => 'required',
-            'amount' => 'required',
-            'message' => 'required'
+            'name' => 'required',
+            'address' => 'required',
+            'amount' => 'required'
         ]);
 
         // Submit News
 
-        $donations = new Donation;
-        $donations->donated_by = $request->input('title');
+        $donations = Donation::find($id);
+        $donations->name = $request->input('name');
+        $donations->address = $request->input('address');
         $donations->amount = $request->input('amount');
-        $donations->message = $request->input('message');
+        $donations->cash = Input::get('type');
         $donations->save();
 
         return redirect('/donations')->with('success', 'Donation Updated');

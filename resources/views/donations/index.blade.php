@@ -29,7 +29,7 @@
                         <div class="post-preview">
                             <a href="/donations/{{$d->id}}">
                                 <h2 class="post-title">
-                                    Donations by {{$d->donated_by}} on {{date('F d, Y', strtotime($d->created_at))}}
+                                    Donations by {{$d->name}} on {{date('F d, Y', strtotime($d->created_at))}}
                                 </h2>
                             </a>
                             {{-- <p class="post-meta">Written on {{date('F d, Y', strtotime($d->created_at))}}</p> --}}
@@ -38,7 +38,7 @@
                     @endforeach
                     {{$donations->links()}}
                 @else
-                    <h2 class="post-title">No News Found.</h2>
+                    <h2 class="post-title">No Donations Found.</h2>
                 @endif
             </div>
         </div>

@@ -27,17 +27,23 @@
                 <p>
                 {!! Form::open(['action' => 'DonationsController@store', 'method' => 'POST']) !!}
                     <div class="form-group">
-                        {{Form::label('donated_by', 'Donated By')}}
-                        {{Form::text('donated_by', '', ['class' => 'form-control', 'placeholder' => 'Donated By'])}}
+                        <h2 class="section-heading">Personal Information</h2>
+                        {{Form::label('name', 'Name')}}
+                        {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Name'])}}
+                        <br>
+                        {{Form::label('address', 'Address')}}
+                        {{Form::text('address', '', ['class' => 'form-control', 'placeholder' => 'Address'])}}
                     </div>
                     <div class="form-group">
-                            {{Form::label('amount', 'Amount')}}
-                            {{Form::text('amount', '', ['class' => 'form-control', 'placeholder' => 'Amount'])}}
+                        <h2 class="section-heading">Donation Details</h2>
+                        {{Form::label('amount', 'Amount')}}
+                        {{Form::text('amount', '', ['class' => 'form-control', 'placeholder' => 'Amount'])}}
                     </div>
                     <div class="form-group">
-                            {{Form::label('message', 'Message')}}
-                            {{Form::textarea('message', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Message'])}}
-    
+                        {{Form::label('type of Donation', 'Type of Donation')}}
+                        <br>
+                        {{Form::radio('type', '1' , true)}} Cash
+                        {{Form::radio('type', '0' , false)}} Bank
                     </div>
                     {{Form::submit('Submit', ['class' => 'btn btn-primary float-right'])}}
                 {!! Form::close() !!}

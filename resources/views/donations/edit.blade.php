@@ -26,18 +26,29 @@
             <div class="col-lg-8 col-md-10 mx-auto">
                 <p>
                 {!! Form::open(['action' => ['DonationsController@update', $donations->id], 'method' => 'POST']) !!}
-                <div class="form-group">
-                        {{Form::label('donated_by', 'Donated By')}}
-                        {{Form::text('donated_by', '', ['class' => 'form-control', 'placeholder' => 'Donated By'])}}
+                    <div class="form-group">
+                        <h2 class="section-heading">Personal Information</h2>
+                        {{Form::label('name', 'Name')}}
+                        {{Form::text('name', $donations->name, ['class' => 'form-control', 'placeholder' => 'Name'])}}
+                        <br>
+                        {{Form::label('address', 'Address')}}
+                        {{Form::text('address', $donations->address, ['class' => 'form-control', 'placeholder' => 'Address'])}}
                     </div>
                     <div class="form-group">
-                            {{Form::label('amount', 'Amount')}}
-                            {{Form::text('amount', '', ['class' => 'form-control', 'placeholder' => 'Amount'])}}
+                        <h2 class="section-heading">Donation Details</h2>
+                        {{Form::label('amount', 'Amount')}}
+                        {{Form::text('amount', $donations->amount, ['class' => 'form-control', 'placeholder' => 'Amount'])}}
                     </div>
                     <div class="form-group">
-                            {{Form::label('message', 'Message')}}
-                            {{Form::textarea('message', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Message'])}}
-    
+                        {{Form::label('type of Donation', 'Type of Donation')}}
+                        <br>
+                        @if($donations->cash == 1)
+                            {{Form::radio('type', '1' , true)}} Cash
+                            {{Form::radio('type', '0' , false)}} Bank
+                        @else 
+                            {{Form::radio('type', '1' , false)}} Cash
+                            {{Form::radio('type', '0' , true)}} Bank
+                        @endif
                     </div>
                     {{Form::hidden('_method', 'PUT')}}
                     {{Form::submit('Submit', ['class' => 'btn btn-primary float-right'])}}
