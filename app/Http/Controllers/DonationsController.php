@@ -3,64 +3,219 @@
 namespace PondongBatangan\Http\Controllers;
 
 use Illuminate\Http\Request;
-use PondongBatangan\Donation;
 use Illuminate\Support\Facades\Input;
+use PondongBatangan\Donation;
+use PondongBatangan\Cash;
+use PondongBatangan\Bank;
+use DB;
+use Carbon\Carbon;
 
 class DonationsController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the prducts.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $data = array(
             'headerTitle' => 'Donations',
             'siteTitle' => 'Donations - People of Pondong Batangan',
-            'donations' => Donation::orderBy('created_at', 'desc')->paginate(5)
+            'cash' => DB::table('donations')
+                                ->where('mode', '=', 'Cash')
+                                ->orderBy('created_at', 'desc')
+                                ->paginate(5),
+            'bank' => DB::table('donations')
+                                ->where('mode', '=', 'Bank')
+                                ->orderBy('created_at', 'desc')
+                                ->paginate(5)
+                                
         );
+
+        $request->session()->forget('donation');
         return view('donations.index')->with($data);
     }
-
     /**
-     * Show the form for creating a new resource.
+     * Show the step 1 Form for creating a new product.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function createStep1(Request $request)
     {
         $data = array(
-            'headerTitle' => 'Add a Donation',
-            'siteTitle' => 'Add a Donation - People of Pondong Batangan'
+            'headerTitle' => 'Donations',
+            'siteTitle' => 'Donations - People of Pondong Batangan',
+            'donations' => $request->session()->get('donation')
         );
-        return view('donations.create')->with($data);
+        return view('donations.create-step1')->with($data);
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Post Request to store step1 info in session
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function postCreateStep1(Request $request)
     {
-        $this->validate($request, [
+        $validatedData = $request->validate([
             'name' => 'required',
             'address' => 'required',
-            'amount' => 'required'
+            'email' => 'required',
+            'contact' => 'required|numeric',
         ]);
+        if(empty($request->session()->get('donation'))){
+            $donation = new Donation();
+            $donation->fill($validatedData);
+            $request->session()->put('donation', $donation);
+        }else{
+            $donation = $request->session()->get('donation');
+            $donation->fill($validatedData);
+            $request->session()->put('donation', $donation);
+        }
+        return redirect('/donations/create-step2');
+    }
 
-        // Submit News
+    /**
+     * Show the step 2 Form for creating a new product.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function createStep2(Request $request)
+    {
+        $data = array(
+            'headerTitle' => 'Donations',
+            'siteTitle' => 'Donations - People of Pondong Batangan',
+            'donations' => $request->session()->get('donation')
+        );
+        return view('donations.create-step2')->with($data);
+    }
+    /**
+     * Post Request to store step1 info in session
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function postCreateStep2(Request $request)
+    {
+        $mode = Input::get('modeRadio');
+        if($mode == 'Cash') {
+            return redirect('/donations/create-step3-cash');
+        } else if($mode == 'Bank') {
+            return redirect('/donations/create-step3-bank');
+        } else {
+        }
+        
+    }
 
-        $donations = new Donation;
-        $donations->name = $request->input('name');
-        $donations->address = $request->input('address');
-        $donations->amount = $request->input('amount');
-        $donations->cash = Input::get('type');
-        $donations->save();
+    /**
+     * Show the step 3 Form for creating a new product.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function createStep3cash(Request $request)
+    {
+        $data = array(
+            'headerTitle' => 'Donations',
+            'siteTitle' => 'Donations - People of Pondong Batangan',
+            'donations' => $request->session()->get('donation')
+        );
+        return view('donations.create-step3-cash')->with($data);
+    }
+    /**
+     * Post Request to store step1 info in session
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function postCreateStep3cash(Request $request)
+    {
+        $validatedData = $request->validate([
+            'amount' => 'required|numeric',
+            'reference_number' => 'required',
+            'mode' => 'required'
+        ]);
+        if(empty($request->session()->get('donation'))){
+            $donation = new Donation();
+            $donation->fill($validatedData);
+            $request->session()->put('donation', $donation);
+        }else{
+            $donation = $request->session()->get('donation');
+            $donation->fill($validatedData);
+            $request->session()->put('donation', $donation);
+        }
+        return redirect('/donations/create-step4');
+        
+    }
 
-        return redirect('/donations')->with('success', 'Donation Added!');
+    /**
+     * Show the step 3 Form for creating a new product.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function createStep3bank(Request $request)
+    {
+        $data = array(
+            'headerTitle' => 'Donations',
+            'siteTitle' => 'Donations - People of Pondong Batangan',
+            'donations' => $request->session()->get('donation')
+        );
+        return view('donations.create-step3-bank')->with($data);
+    }
+    /**
+     * Post Request to store step1 info in session
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function postCreateStep3bank(Request $request)
+    {
+        $validatedData = $request->validate([
+            'amount' => 'required|numeric',
+            'deposited_at' => 'required|date',
+            'reference_number' => 'required',
+            'mode' => 'required'
+        ]);
+        
+        if(empty($request->session()->get('donation'))){
+            $donation = new Donation();
+            $donation->fill($validatedData);
+            $request->session()->put('donation', $donation);
+        }else{
+            $donation = $request->session()->get('donation');
+            $donation->fill($validatedData);
+            $request->session()->put('donation', $donation);
+        }
+        return redirect('/donations/create-step4');
+        
+    }
+
+    /**
+     * Show the Product Review page
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function createStep4(Request $request)
+    {
+        $data = array(
+            'headerTitle' => 'Donations',
+            'siteTitle' => 'Donations - People of Pondong Batangan',
+            'donations' => $request->session()->get('donation'),
+        );
+        return view('donations.create-step4')->with($data);
+    }
+
+    /**
+     * Store product
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $donation = $request->session()->get('donation');
+        $donation->save();
+        return redirect('/donations');
     }
 
     /**
@@ -72,70 +227,13 @@ class DonationsController extends Controller
     public function show($id)
     {
         $data = array(
-            'headerTitle' => 'Donations',
-            'siteTitle' => 'Donations - People of Pondong Batangan',
-            'donations' => Donation::find($id),
-            'type' => Donation::where('cash', '1')->get(['cash'])
-        );
-
-        return view('donations.show')->with($data);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        $data = array(
-            'headerTitle' => 'Edit Donation',
-            'siteTitle' => 'Edit Donation - People of Pondong Batangan',
+            'headerTitle' => 'Ulat Batangan',
+            'siteTitle' => 'Ulat Batangan - People of Pondong Batangan',
             'donations' => Donation::find($id)
         );
 
-        return view('donations.edit')->with($data);
+        return view('donations.show')->with($data);
+
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        $this->validate($request, [
-            'name' => 'required',
-            'address' => 'required',
-            'amount' => 'required'
-        ]);
-
-        // Submit News
-
-        $donations = Donation::find($id);
-        $donations->name = $request->input('name');
-        $donations->address = $request->input('address');
-        $donations->amount = $request->input('amount');
-        $donations->cash = Input::get('type');
-        $donations->save();
-
-        return redirect('/donations')->with('success', 'Donation Updated');
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        $donations = Donation::find($id);
-        $donations->delete();
-
-        return redirect('/donations')->with('success', 'Donation Removed');
-    }
 }
